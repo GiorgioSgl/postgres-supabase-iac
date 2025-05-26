@@ -1,34 +1,33 @@
+
 # postgres-supabase-iac
 
+A simple infrastructure-as-code setup for running Postgres with Supabase using Docker.
 
-## How to get started
+## Getting Started
 
-Change names of the following file
-    - postgres_subapase_iac
+1. **Rename the Project**
 
+    Update the project name in all relevant files and directories from `postgres_subapase_iac` to your preferred name.
 
-To get up the docker
-```bash
-$ docker compose up -d
-```
+2. **Start the Docker Containers**
 
-To install the command
-```bash
-$ poetry install
-```
+    ```bash
+    docker compose up -d
+    ```
 
+3. **Install Python Dependencies**
 
+    ```bash
+    poetry install
+    ```
 
+    This will install all required components and enable the `postgres-supabase` command.
 
+## Notes
 
+- To stop and remove all Docker containers and associated volumes:
 
+  ```bash
+  docker compose down -v
+  ```
 
-to install all components and able the command postgres-supabase
-
-
-
-## Notas
-
-```bash
-$ docker compose down -v # to remove the compose if needed
-```
